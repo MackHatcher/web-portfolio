@@ -1,0 +1,111 @@
+﻿body {
+}
+
+.img-responsive {
+    width: 200px;
+}
+
+#portfolioModal6 {
+    width: 800px;
+    height: 700px;
+    padding: 0;
+}
+
+
+#portfolio {
+    background-image: url("https://www.memoryc.com/images/products/bb/efs_21752.jpg");
+    background-size: 1000px 550px;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    margin-top: 10px;
+   
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    height: 390px;
+    width: 700px;
+    display: block;
+    max-width: 100%;
+
+}
+
+
+#myCarousel {
+    width: 700px;
+    height: 400px;
+    left: 410px;
+    bottom: 52px;
+}
+
+
+#modal-matching {
+    width: 950px;
+    height: 450px;
+}
+
+#modal-cuphead {
+    width:950px;
+    height:450px;
+}
+
+#modal-myreads {
+    width: 950px;
+    height: 450px;
+}
+
+#modal-restaurant {
+    width: 950px;
+    height: 450px;
+}
+
+
+#modal-music-store {
+    width: 950px;
+    height: 450px;
+}
+
+.about {
+    text-align: left;
+    
+}
+
+.divider {
+    text-align:center;
+}
+
+.skills-header {
+    margin-top: 100px;
+    text-align:center;
+}
+
+.skills-list {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    left: 475px;
+    top: 50px;
+}
+
+.skills-list > li {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align:center;
+}
+
+.education {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    max-width: none;
+}

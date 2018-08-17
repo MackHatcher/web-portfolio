@@ -1,0 +1,232 @@
+﻿
+@{
+    ViewBag.Title = "JSExercise";
+}
+
+<h2>JSExercise</h2>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Fun(ctions) With Math</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Fact(orial) Checker</a></li>
+                    <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
+                    <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>Math Functions</h3>
+                        <p>Please enter 5 numbers. Press Calculate to return the smallest number, the largest, the average, the sum and the product.</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num1">First Value:</label>
+                                <input type="number" class="form-control" id="num1">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="min"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num3">Second Value:</label>
+                                <input type="number" class="form-control" id="num2">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="max"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num3">Third Value:</label>
+                                <input type="number" class="form-control" id="num3">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="mean"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num4">Fourth Value:</label>
+                                <input type="number" class="form-control" id="num4">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="sum"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num5">Fifth Value:</label>
+                                <input type="number" class="form-control" id="num5">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="product"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-math" class="btn btn-primary">Calculate</button>
+                        <button type="button" class="btn btn-success">Show Code</button>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Factorial Calculator</h3>
+                        <p>
+                            Please enter a number. Press Calculate to return the factorial of this number.
+                            *note* A factorial is a number multiplied by the numbers that precede it. For example, the factorial of 3 is ((3*2)*1))
+                        </p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num6">Value:</label>
+                                <input type="number" class="form-control" id="num6">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="factorial"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-factor" class="btn btn-primary">Calculate</button>
+                        <button type="button" class="btn btn-success">Show Code</button>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>FizzBuzz</h3>
+                        <p>Please enter two numbers. Press Calculate to determine if they are multiples of 1-100. Fizz means the first number is a whole multiple, while Buzz means the second is a whole multiple. FizzBuzz means they are both whole multiples.</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num7">First Value:</label>
+                                <input type="number" class="form-control" id="fizz">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="num8">Second Value:</label>
+                                <input type="number" class="form-control" id="buzz">
+                            </div>
+                            <div class="col-md-6">
+                                <p id="fizzBuzzResult"></p>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-fizz" class="btn btn-primary">Calculate</button>
+                        <button type="button" class="btn btn-success">Show Code</button>
+                    </div>
+                    <div id="menu3" class="'tab-pane fade">
+                        <h3>Palindrome Checker</h3>
+                        <p>Please enter a word or sentence. Press Check to determine if this word/sentence is a palindrome (a word/sentence that reads the same backwards as forwards, ex. radar, rotator).</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="text1">Enter Text to Check</label>
+                                <input type="text" class="form-control" id="pal">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="palResult"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-palindrome" class="btn btn-primary">Check</button>
+                        <button type="button" class="btn btn-success">Show Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $("#btn-math").click(function () {
+            var num1 = Number($("#num1").val());
+            var num2 = Number($("#num2").val());
+            var num3 = Number($("#num3").val());
+            var num4 = Number($("#num4").val());
+            var num5 = Number($("#num5").val());
+            var max, min, mean, sum, product;
+
+            //math functions
+            max = Math.max(num1, num2, num3, num4, num5);
+            min = Math.min(num1, num2, num3, num4, num5);
+            sum = num1 + num2 + num3 + num4 + num5;
+            mean = sum / 5;
+            product = num1 * num2 * num3 * num4 * num5;
+
+            //output results
+            $("#sum").text("The sum is: " + sum);
+            $("#product").text("The product is: " + product);
+            $("#mean").text("The average is: " + mean);
+            $("#max").text("The largest number is: " + max);
+            $("#min").text("The smallest number is: " + min);
+        });
+        $("#btn-factor").click(function () {
+            var factNum = Number($("#num6").val());
+            var answer = 0;
+            //factor function
+
+            if (factNum > 0 && $("#num6").val() != "") {
+                for (var i = factNum - 1; i > 0; i--) {
+                    factNum = factNum * i;
+                    answer = factNum;
+                }
+                $("#factorial").text("The factorial of the provided number is " + answer + ".");
+            }
+            else {
+                $("#factorial").text("Please ensure you have entered a value, and that it is greater than 0");
+            }
+        });
+        $("#btn-fizz").click(function () {
+            var n1 = Number($("#fizz").val());
+            var n2 = Number($("#buzz").val());
+            var arr = [];
+            var output = "";
+
+            for (let i = 1; arr.length < 100; i++) {
+                if (i % n1 === 0 && i % n2 === 0) {
+                    arr.push("FizzBuzz");
+                    
+                } else if (i % n1 === 0) {
+                    arr.push('Fizz');
+                    
+                } else if (i % n2 === 0) {
+                    arr.push('Buzz');
+                    
+                } else {
+                    arr.push(i);
+                    
+                }
+     
+            }
+            $("#fizzBuzzResult").text(arr.join(', '));
+
+        });
+
+        $("#btn-palindrome").click(function () {
+            var palSen = $("#pal").val();
+            
+            if ($("#pal").val() != "") {
+                
+                palSen = palSen.replace(/\s/g, '');
+                palSen = palSen.replace(/[^a-zA-Z0-9]/g, '');
+
+                var palCheck = "";
+                
+                for (var i = (palSen.length) - 1; i >= 0; i--) {
+                    palCheck += palSen[i];
+                }
+
+                
+                if (palSen.toUpperCase() == palCheck.toUpperCase()) {
+                
+                    $("#palResult").text(palSen + " is a palindrome.");
+                }
+                else {
+                
+                    $("#palResult").text(palSen + " is not a palindrome.");
+                }
+            }
+            else {
+                
+                $("#palResult").text("Please enter a value.");
+            }
+        });
+    </script>
+}

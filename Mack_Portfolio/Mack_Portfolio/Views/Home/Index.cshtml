@@ -1,0 +1,839 @@
+﻿@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mack's Portfolio</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Theme CSS -->
+
+    <link href="~/Content/freelancer.min.css" rel="stylesheet" />
+
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="~/Content/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Mack Hatcher</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-header" src="~/img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Mack Hatcher</span>
+                        <hr class="star-light">
+                        <span class="skills">Software & Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+       
+    <section id="portfolio">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/5vUEPw0UxbHZAX9ula/giphy.gif" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/XKTUsJ2lufNDUivdqT/giphy.gif" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/n4aqAcE5WaGRm4T6cr/giphy.gif" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/Bfb8oRPh1B3B510KDx/giphy.gif" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/KZwR6UTGM4fc2xdWr2/giphy.gif" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://cdn-images-1.medium.com/max/2000/1*l4xICbIIYlz1OTymWCoUTw.jpeg" id="matching" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                        <i class="fas fa-user"></i> About
+                    </h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 about">
+                    <p>
+                        Welcome to my portfolio! My name is Mack, and I am a software development student currently enrolled at MITT in Winnipeg, Manitoba. Over the past 5 months, I have gone from knowing absolutely nothing about programming to the illustrious programming master you see before you!
+                    </p>
+                </div>
+                <div class="col-md-4 about">
+                    <p>I am of course being facetious; I still have a whole lot to learn (Which is what I find so attractive about the world of programming; you are never done learning!). So far in the course we have focused on the front-end side of things; starting with HTML and CSS, and then moving on to JavaScript.</p>
+                </div>
+                <div class="col-md-4 about">
+                    <p>Please take a look at the content above; these are the projects made in school that I am most proud of. I think they show how far I've come since this all began. Clicking on each individual GIF will take you to its corresponding Github repository. Thanks for visiting!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="skills-header">
+            <h2>
+                <i class="fas fa-sun"></i> Skills
+            </h2>
+            </div>
+            <div class="divider">
+                <hr class="star-light">
+            </div>
+            <ul class="skills-list col-md-12">
+                <li>
+                    <div class="btn-social btn-outline"><i class="fab fa-html5"></i></div>
+                    <p>HTML</p>
+                </li>
+                <li>
+                    <div class="btn-social btn-outline"><i class="fab fa-css3-alt"></i></div>
+                    <p>CSS</p>
+                </li>
+                <li>
+                    <div class="btn-social btn-outline"><i class="fab fa-js-square"></i></div>
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <div class="btn-social btn-outline"><i class="fab fa-angular"></i></div>
+                    <p>Angular.js</p>
+                </li>
+                <li>
+                    <div class="btn-social btn-outline"><i class="fab fa-react"></i></div>
+                    <p>React</p>
+                </li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>
+                <i class="fas fa-graduation-cap"></i> Education
+            </h2>
+            <div class="divider">
+                <hr class="star-light">
+            </div>
+            <h3>Manitoba Institute of Trades and Technology</h3>
+            <p>
+                <i class="fas fa-calendar-alt"></i><span id="date"> February 2018 - </span><span id="present">Present</span>
+            <p>Software Developer</p>
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                        <i class="fas fa-id-card"></i> Contact Me
+                    </h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <h3>Contact Information</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4 contact-info">
+                        <p>
+                            <i class="fas fa-briefcase icon"></i> Software Developer
+                        </p>
+                        <p>
+                            <i class="fas fa-home icon"></i> Winnipeg, Manitoba, Canada
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope icon"></i> mack.hatcher1@outlook.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone icon"></i> 12042283490
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+
+                            <li>
+                                <a href="https://github.com/MackHatcher" class="btn-social btn-outline"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mackenzie-hatcher-37413316a/" class="btn-social btn-outline"><i class="fab fa-linkedin"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <p>This website was created using a template from <a href="http://startbootstrap.com">Start Bootstrap</a>, and was modifed by me.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Matching Game</h2>
+                            <hr class="star-primary">
+                            <img src="https://media.giphy.com/media/5vUEPw0UxbHZAX9ula/giphy.gif" id="modal-matching" class="img-responsive img-centered" alt="">
+                            <p>This is a simple card matching game. It uses assets from the popular game "Dungeons & Dragons". This was the first project I ever completed.</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Arcade Game</h2>
+                            <hr class="star-primary">
+                            <img src="https://media.giphy.com/media/XKTUsJ2lufNDUivdqT/giphy.gif" id="modal-cuphead" class="img-responsive img-centered" alt="">
+                            <p>This is a play on the arcade classic, "Frogger", using assets from the popular Xbox game "Cuphead".</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Bookshelf App</h2>
+                            <hr class="star-primary">
+                            <img src="https://media.giphy.com/media/n4aqAcE5WaGRm4T6cr/giphy.gif" id="modal-myreads" class="img-responsive img-centered" alt="">
+                            <p>This is a bookself app, where a user can add books from a database to their "shelf". They can then sort books by whether they have read, want to read, or are currently reading them.</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Restaurant Review App</h2>
+                            <hr class="star-primary">
+                            <img src="https://media.giphy.com/media/Bfb8oRPh1B3B510KDx/giphy.gif" id="modal-restaurant" class="img-responsive img-centered" alt="">
+                            <p>This is an app for users to review local restaurants. Users can upvote or downvote restaurants.</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Shopping Cart App</h2>
+                            <hr class="star-primary">
+                            <img src="https://media.giphy.com/media/KZwR6UTGM4fc2xdWr2/giphy.gif" id="modal-music-store" class="img-responsive img-centered" alt="">
+                            <p>This is a music store app, where users can purchase items and add them to their shopping cart.</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Client:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Date:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Service:
+                                    <strong>
+                                        <a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Fun(ctions) With Math</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Fact(orial) Checker</a></li>
+                    <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
+                    <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>Math Functions</h3>
+                        <p>Please enter 5 numbers. Press Calculate to return the smallest number, the largest, the average, the sum and the product.</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num1">First Value:</label>
+                                <input type="number" class="form-control" id="num1">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="min"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num3">Second Value:</label>
+                                <input type="number" class="form-control" id="num2">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="max"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num3">Third Value:</label>
+                                <input type="number" class="form-control" id="num3">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="mean"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num4">Fourth Value:</label>
+                                <input type="number" class="form-control" id="num4">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="sum"></label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num5">Fifth Value:</label>
+                                <input type="number" class="form-control" id="num5">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="product"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-math" class="btn btn-primary">Calculate</button>
+                        <button type="button" id="btn-show" class="btn btn-success">Show Code</button>
+                        <div id="mathcode" class="col-md-12">
+                            <pre class="brush: js">
+                                $   ("#btn-math").click(function () {
+                                var num1 = Number($("#num1").val());
+                                var num2 = Number($("#num2").val());
+                                var num3 = Number($("#num3").val());
+                                var num4 = Number($("#num4").val());
+                                var num5 = Number($("#num5").val());
+                                var max, min, mean, sum, product;
+
+                                //math functions
+                                max = Math.max(num1, num2, num3, num4, num5);
+                                min = Math.min(num1, num2, num3, num4, num5);
+                                sum = num1 + num2 + num3 + num4 + num5;
+                                mean = sum / 5;
+                                product = num1 * num2 * num3 * num4 * num5;
+
+                                //output results
+                                $("#sum").text("The sum is: " + sum);
+                                $("#product").text("The product is: " + product);
+                                $("#mean").text("The average is: " + mean);
+                                $("#max").text("The largest number is: " + max);
+                                $("#min").text("The smallest number is: " + min);
+                                });
+                            </pre>
+                        </div>
+
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Factorial Calculator</h3>
+                        <p>
+                            Please enter a number. Press Calculate to return the factorial of this number.
+                            *note* A factorial is a number multiplied by the numbers that precede it. For example, the factorial of 3 is ((3*2)*1))
+                        </p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num6">Value:</label>
+                                <input type="number" class="form-control" id="num6">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="factorial"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-factor" class="btn btn-primary">Calculate</button>
+                        <button type="button" id="btn-factor-show" class="btn btn-success">Show Code</button>
+                        <div id="fact-show" class="col-md-12">
+                            <pre class="brush: js">
+                                        $("#btn-factor").click(function () {
+                                        var factNum = Number($("#num6").val());
+                                        var answer = 0;
+                                        //factor function
+                                        if (factNum > 0 && $("#num6").val() != "") {
+                                        for (var i = factNum - 1; i > 0; i--) {
+                                        factNum = factNum * i;
+                                        answer = factNum;
+                                        }
+                                        $("#factorial").text("The factorial of the provided number is " + answer + ".");
+                                        }
+                                        else {
+                                        $("#factorial").text("Please ensure you have entered a value, and that it is greater than 0");
+                                        }
+                                        });
+                            </pre>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>FizzBuzz</h3>
+                        <p>Please enter two numbers. Press Calculate to determine if they are multiples of 1-100. Fizz means the first number is a whole multiple, while Buzz means the second is a whole multiple. FizzBuzz means they are both whole multiples.</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="num7">First Value:</label>
+                                <input type="number" class="form-control" id="fizz">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="num8">Second Value:</label>
+                                <input type="number" class="form-control" id="buzz">
+                            </div>
+                            <div class="col-md-6">
+                                <p id="fizzBuzzResult"></p>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-fizz" class="btn btn-primary">Calculate</button>
+                        <button type="button" id="fizz-show" class="btn btn-success">Show Code</button>
+                        <div id="fizz-code" class="col-md-12">
+                            <pre class="brush: js">
+                                                $("#btn-fizz").click(function () {
+                                                    var n1 = Number($("#fizz").val());
+                                                    var n2 = Number($("#buzz").val());
+                                                    var arr = [];
+                                                    var output = "";
+
+                                                    for (let i = 1; arr.length < 100; i++) {
+                                                        if (i % n1 === 0 && i % n2 === 0) {
+                                                            arr.push("FizzBuzz");
+                                                        } else if (i % n1 === 0) {
+                                                            arr.push('Fizz');
+
+                                                        } else if (i % n2 === 0) {
+                                                            arr.push('Buzz');
+                                                        } else {
+                                                            arr.push(i);
+                                                        }
+                                                    }
+                                                $("#fizzBuzzResult").text(arr.join(', '));
+                                                });
+                            </pre>
+                        </div>
+                    </div>
+                    <div id="menu3" class="'tab-pane fade">
+                        <h3>Palindrome Checker</h3>
+                        <p>Please enter a word or sentence. Press Check to determine if this word/sentence is a palindrome (a word/sentence that reads the same backwards as forwards, ex. radar, rotator).</p>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="text1">Enter Text to Check</label>
+                                <input type="text" class="form-control" id="pal">
+                            </div>
+                            <div class="col-md-6">
+                                <label id="palResult"></label>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-palindrome" class="btn btn-primary">Check</button>
+                        <button type="button" id="pal-show" class="btn btn-success">Show Code</button>
+                        <div id="pal-code" class="col-md-12">
+                            <pre class="brush: js">
+                                                      $("#btn-palindrome").click(function () {
+                                                            var palSen = $("#pal").val();
+                                                            if ($("#pal").val() != "") {
+                                                                palSen = palSen.replace(/\s/g, '');
+                                                                palSen = palSen.replace(/[^a-zA-Z0-9]/g, '');
+                                                                var palCheck = "";
+   
+                                                                for (var i = (palSen.length) - 1; i >= 0; i--) {
+                                                                    palCheck += palSen[i];
+                                                                }
+                                                            if (palSen.toUpperCase() == palCheck.toUpperCase()) {
+                                                                $("#palResult").text(palSen + " is a palindrome.");
+                                                                }
+                                                            else {
+                                                                $("#palResult").text(palSen + " is not a palindrome.");
+                                                                }
+                                                                }
+                                                            else {  
+                                                                $("#palResult").text("Please enter a value.");
+                                                                }
+                                                        });
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    @*<script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>*@
+
+    <!-- Theme JavaScript -->
+    <script src="~/Scripts/freelancer.min.js"></script>
+    <script src="~/Scripts/JavaScript.js"></script>
+    <!-- Syntax Highlighter -->
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+</body>
+
+</html>
