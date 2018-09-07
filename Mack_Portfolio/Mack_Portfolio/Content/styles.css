@@ -11,14 +11,16 @@
     padding: 0;
 }
 
+#resume.btn {
+    margin-top: 20px;
+}
 
 #portfolio {
     background-image: url("https://www.memoryc.com/images/products/bb/efs_21752.jpg");
     background-size: 1000px 550px;
     background-position: 50% 50%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     margin-top: 10px;
-   
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {

@@ -17,6 +17,7 @@ $   ("#btn-math").click(function () {
     product = num1 * num2 * num3 * num4 * num5;
 
     //output results
+ 
     $("#sum").text("The sum is: " + sum);
     $("#product").text("The product is: " + product);
     $("#mean").text("The average is: " + mean);
@@ -119,7 +120,7 @@ $("#pal-show").click(function () {
 }
             else {
 
-        $("#palResult").text("Please enter a value.");
+        $("#palResult").text("Please enter a valid value.");
     }
 
 });
